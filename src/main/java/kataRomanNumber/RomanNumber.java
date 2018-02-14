@@ -14,6 +14,18 @@ public class RomanNumber {
 				res=res+"I";
 			}
 		}
+		else if(nb == 4){
+			res = "IV";
+		}
+		else if(nb == 5) {
+			res = "V";
+		}
+		else if(nb < 9) {
+			res="V";
+			for (int i = 5; i < nb; i++) {
+				res=res+"I";
+			}
+		}
 		return res;
 	}
 }
