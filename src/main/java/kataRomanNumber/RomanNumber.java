@@ -8,6 +8,12 @@ public class RomanNumber {
 	 * @return roman number
 	 */
 	public String convert(int nb) {
-		return null;
+		String res="";
+		if(nb < 4) {
+			for (int i = 0; i < nb; i++) {
+				res=res+"I";
+			}
+		}
+		return res;
 	}
 }
