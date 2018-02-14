@@ -10,9 +10,7 @@ public class RomanNumber {
 	public String convert(int nb) {
 		String res="";
 		if(nb < 4) {
-			for (int i = 0; i < nb; i++) {
-				res=res+"I";
-			}
+			res = unit(nb, res);
 		}
 		else if(nb == 4){
 			res = "IV";
@@ -22,9 +20,14 @@ public class RomanNumber {
 		}
 		else if(nb < 9) {
 			res="V";
-			for (int i = 5; i < nb; i++) {
-				res=res+"I";
-			}
+			res = unit(nb-5, res);
+		}
+		return res;
+	}
+
+	private String unit(int nb, String res) {
+		for (int i = 0; i < nb; i++) {
+			res=res+"I";
 		}
 		return res;
 	}
