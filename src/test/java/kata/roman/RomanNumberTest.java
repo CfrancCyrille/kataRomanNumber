@@ -1,9 +1,11 @@
-package kataRomanNumber;
+package kata.roman;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import kata.roman.RomanNumber;
 
 public class RomanNumberTest {
 
