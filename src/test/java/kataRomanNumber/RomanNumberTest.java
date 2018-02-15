@@ -75,4 +75,25 @@ public class RomanNumberTest {
 		assertEquals(expected, actual);
 	}
 
+	@Test
+	public void testConvert_11_XI() {
+		expected = "XI";
+		actual = app.convert(11);
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void testConvert_40_XL() {
+		expected = "XL";
+		actual = app.convert(40);
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void testConvert_50_L() {
+		expected = "L";
+		actual = app.convert(50);
+		assertEquals(expected, actual);
+	}
+
 }
